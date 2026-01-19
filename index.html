@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Zone</title>
+    <title>Tiago's Fun Zone</title>
     <style>
         * { box-sizing: border-box; }
         body {
@@ -72,13 +72,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome, Miguel!</h1>
+        <h1>Welcome, Tiago!</h1>
 
         <button class="btn" onclick="rollDice()">Roll Dice</button>
         <button class="btn" onclick="magic8Ball()">Magic 8-Ball</button>
         <button class="btn" onclick="getFortune()">Get Fortune</button>
 
-        <div class="result" id="result">Click a button!</div>
+        <div class="result" id="result">Hey Tiago, click a button!</div>
     </div>
 
     <script>
@@ -87,13 +87,13 @@
         function rollDice() {
             const result = document.getElementById('result');
             const roll = Math.floor(Math.random() * 6);
-            result.innerHTML = `<span class="dice">${diceEmojis[roll]}</span>`;
+            result.innerHTML = `<span class="dice">${diceEmojis[roll]}</span> Tiago rolled!`;
         }
 
         function magic8Ball() {
             const answers = [
-                '✅ Yes!', '❌ No', '🤔 Maybe',
-                '🔮 Ask again later', '💯 Definitely!', '😬 Doubtful'
+                '✅ Yes, Tiago!', '❌ No, Tiago', '🤔 Maybe, Tiago',
+                '🔮 Ask again later, Tiago', '💯 Definitely, Tiago!', '😬 Doubtful, Tiago'
             ];
             const result = document.getElementById('result');
             result.textContent = answers[Math.floor(Math.random() * answers.length)];
